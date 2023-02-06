@@ -9,6 +9,14 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default async function asyncHome() {
 
+  //https://www.quicknode.com/docs/ethereum/eth-v1-beacon-states-%7Bstate_id%7D-validators
+
+    // curl -X GET \
+  //   "https://divine-cosmopolitan-choice.discover.quiknode.pro/8e2568759967bf9240be97cc620357e38436ae4a/eth/v1/beacon/states/head/validators?status=pending_queued" \
+  //   -H "accept: application/json"
+
+  // https://github.com/davidkassa/eth2-validator-queue
+
   const getToken = await axios
   .get(
     'https://divine-cosmopolitan-choice.discover.quiknode.pro/8e2568759967bf9240be97cc620357e38436ae4a/eth/v1/beacon/states/head/validators?status=pending_queued'
